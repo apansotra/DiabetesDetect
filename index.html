@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>mlmodel</title>
+</head>
+
+<body bgcolor="pink">
+
+<div class="login">
+<h1 align="center"><font color="red" face="lucida calligraphy">Diabetes Prediction Model</h1>
+<form action="{{url_for("index")}}" method="POST">
+
+
+<font color="blue">Pregnancies&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Pregnancies" placeholder="Pregnancies" required="required"/><br><br>
+
+Glucose&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Glucose" placeholder="Glucose" required="required"/><br><br>
+
+BloodPressure&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="BloodPressure" placeholder="BloodPressure" required="required"/><br><br>
+
+
+SkinThickness&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="SkinThickness" placeholder="SkinThickness" required="required"/><br><br>
+
+Insulin&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Insulin" placeholder="Insulin" required="required"/><br><br>
+
+BMI&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="BMI" placeholder="BMI" required="required"/><br><br>
+
+DiabetesPedigreeFunction&nbsp&nbsp&nbsp<input type="text" name="
+DiabetesPedigreeFunction" placeholder="
+DiabetesPedigreeFunction" required="required"/><br><br>
+
+Age&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Age" placeholder="Age" required="required"/><br><br>
+
+<!-- Outcome&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Outcome" placeholder="Outcome" required="required"/><br><br> -->
+</font>
+
+
+<button type="submit">Predict</button>
+</form>
+<br><br>
+
+{{predict_text}}
+</div>
+</body>
+</html>
